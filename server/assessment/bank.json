@@ -1,0 +1,726 @@
+{
+  "version": 1,
+  "source": "banco-preguntas-kallpa.txt",
+  "questions": [
+    {
+      "id": "limpieza-01",
+      "occupationId": "limpieza",
+      "competencyKey": "protocolos",
+      "situation": "Estás limpiando un área de alto tránsito y descubres un derrame de un líquido desconocido que emite un olor fuerte y penetrante. ¿Cómo procedes?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Limpias rápidamente el derrame usando lejía concentrada para asegurar que cualquier bacteria o químico quede neutralizado."
+        },
+        {
+          "id": "B",
+          "text": "Echas abundante agua caliente sobre el líquido para diluirlo y procedes a trapearlo hacia el sumidero más cercano."
+        },
+        {
+          "id": "C",
+          "text": "Absorbes el líquido con papel toalla industrial rápidamente y lo botas en el tacho de basura común para evitar que la gente lo pise."
+        },
+        {
+          "id": "D",
+          "text": "Aísla la zona con señalética, garantizas la ventilación si es posible, y reportas a salud ocupacional o tu supervisor antes de aplicar cualquier químico."
+        },
+        {
+          "id": "E",
+          "text": "Usas el detergente multiusos más abrasivo de tu carrito y restriegas con fuerza usando mascarilla de tela."
+        }
+      ],
+      "correctOptionId": "D",
+      "explanation": "Ante un líquido desconocido, lo primero es proteger a las personas y no aplicar químicos sin saber qué es: se aísla la zona, se ventila y se reporta para recibir indicaciones.",
+      "validation": {
+        "status": "validada",
+        "keySource": "Material proporcionado (banco-preguntas-kallpa.txt, pregunta 1, marcador [CORRECTA])",
+        "competencyAssignment": "Propuesta de KALLPA; pendiente de revisión experta",
+        "explanationSource": "Redactada por KALLPA a partir de la alternativa correcta del material"
+      }
+    },
+    {
+      "id": "limpieza-02",
+      "occupationId": "limpieza",
+      "competencyKey": "control_suministros",
+      "situation": "Al revisar tu cuarto de limpieza un miércoles, te das cuenta de que el desinfectante de pisos se terminará mañana, pero el próximo pedido de insumos llega recién el martes. ¿Qué acción tomas?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Diluyes el desinfectante restante con el doble de agua para que el volumen rinda los días que faltan."
+        },
+        {
+          "id": "B",
+          "text": "Compras un desinfectante genérico en la tienda de la esquina con tu dinero y luego pides el reembolso por caja chica."
+        },
+        {
+          "id": "C",
+          "text": "Avisas al supervisor inmediatamente para revisar el stock de contingencia o autorizar temporalmente el uso dosificado de un producto alternativo aprobado."
+        },
+        {
+          "id": "D",
+          "text": "Limpias los pisos exclusivamente con agua durante esos días para ahorrar el poco químico que queda para emergencias."
+        },
+        {
+          "id": "E",
+          "text": "Extraes jabón líquido de los dispensadores de los baños públicos para mezclarlo con agua y usarlo como lavapisos."
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "Avisar a tiempo al responsable permite usar el stock de reserva o un producto aprobado, sin diluir de más ni usar insumos no autorizados.",
+      "validation": {
+        "status": "validada",
+        "keySource": "Material proporcionado (banco-preguntas-kallpa.txt, pregunta 2, marcador [CORRECTA])",
+        "competencyAssignment": "Propuesta de KALLPA; pendiente de revisión experta",
+        "explanationSource": "Redactada por KALLPA a partir de la alternativa correcta del material"
+      }
+    },
+    {
+      "id": "limpieza-03",
+      "occupationId": "limpieza",
+      "competencyKey": "org_materiales",
+      "situation": "Terminas tu turno. Tu carrito tiene paños húmedos usados, botellas con productos a medio usar y bolsas de basura llenas. ¿Cuál es el procedimiento de cierre correcto?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Vacías las bolsas de basura y dejas los paños remojando en lejía en el lavadero para que el turno de mañana los encuentre desinfectados."
+        },
+        {
+          "id": "B",
+          "text": "Guardas el carrito en el cuarto tal como está; es regla no escrita que cada turno prepara su propio material desde cero según su preferencia."
+        },
+        {
+          "id": "C",
+          "text": "Botas a la basura los paños y esponjas usados para garantizar higiene, dejando que el siguiente turno abra insumos totalmente nuevos."
+        },
+        {
+          "id": "D",
+          "text": "Limpias el carrito por fuera pero dejas las botellas de spray a la mitad, asumiendo que el próximo turno sabrá qué líquido contiene cada una."
+        },
+        {
+          "id": "E",
+          "text": "Botas la basura, lavas/desinfectas los paños, rellenas y etiquetas las botellas, limpias el carrito y firmas el registro de entrega de materiales."
+        }
+      ],
+      "correctOptionId": "E",
+      "explanation": "Dejar los materiales limpios, rellenados, etiquetados y registrados permite que el siguiente turno trabaje rápido y con seguridad.",
+      "validation": {
+        "status": "validada",
+        "keySource": "Material proporcionado (banco-preguntas-kallpa.txt, pregunta 3, marcador [CORRECTA])",
+        "competencyAssignment": "Propuesta de KALLPA; pendiente de revisión experta",
+        "explanationSource": "Redactada por KALLPA a partir de la alternativa correcta del material"
+      }
+    },
+    {
+      "id": "limpieza-04",
+      "occupationId": "limpieza",
+      "competencyKey": "uso_productos",
+      "situation": "Un superior te pide con urgencia que limpies una mancha de grasa oscura en la alfombra de la oficina principal, pero en tu carrito solo tienes lejía, limpiavidrios y detergente multiusos abrasivo. ¿Qué haces?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Usas una gota muy pequeña de lejía fuertemente diluida y frotas suavemente para que la mancha salga sin decolorar mucho."
+        },
+        {
+          "id": "B",
+          "text": "Le explicas técnicamente al superior que esos químicos fijarán la mancha o quemarán la fibra, y solicitas el limpiador textil específico del almacén."
+        },
+        {
+          "id": "C",
+          "text": "Aplicas el limpiagrasas multiuso en abundancia y frotas rápido con un cepillo duro para que el químico no tenga tiempo de penetrar."
+        },
+        {
+          "id": "D",
+          "text": "Echas agua fría en abundancia, lo cubres temporalmente con un tapete y le dices que lo limpiarás al día siguiente."
+        },
+        {
+          "id": "E",
+          "text": "Te niegas a limpiarlo argumentando que \"las alfombras no corresponden a las funciones de tu contrato\"."
+        }
+      ],
+      "correctOptionId": "B",
+      "explanation": "Cada superficie necesita su producto: la lejía o un abrasivo pueden fijar la mancha o dañar la fibra. Lo adecuado es explicarlo y pedir el limpiador textil.",
+      "validation": {
+        "status": "validada",
+        "keySource": "Material proporcionado (banco-preguntas-kallpa.txt, pregunta 4, marcador [CORRECTA])",
+        "competencyAssignment": "Propuesta de KALLPA; pendiente de revisión experta",
+        "explanationSource": "Redactada por KALLPA a partir de la alternativa correcta del material"
+      }
+    },
+    {
+      "id": "administrativo-05",
+      "occupationId": "administrativo",
+      "competencyKey": "herramientas_digitales",
+      "situation": "Tu supervisor te entrega 100 facturas físicas desordenadas de varios meses y te pide \"ingresarlas al sistema\" en una hora para un reporte de gastos urgente. ¿Cómo procedes?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Ingresas los montos totales directamente en la calculadora según las sacas de la pila y le das la cifra final verbalmente al jefe para ganar tiempo."
+        },
+        {
+          "id": "B",
+          "text": "Tomas fotos de cada factura con tu celular y las envías por WhatsApp al supervisor en un solo envío."
+        },
+        {
+          "id": "C",
+          "text": "Las ordenas velozmente por proveedor/mes, las escaneas en bloque, y registras los datos clave (RUC, fecha, monto) en una plantilla de Excel validando los totales."
+        },
+        {
+          "id": "D",
+          "text": "Las escaneas todas juntas creando un único archivo PDF de 100 páginas y lo subes al sistema ERP sin ingresar datos manuales."
+        },
+        {
+          "id": "E",
+          "text": "Empiezas a tipear los datos en Excel agarrando cualquier factura al azar, confiando en que la función \"ordenar\" del programa lo arregle al final."
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "Ordenar primero, digitalizar en bloque y registrar los datos clave en una plantilla con totales verificados es rápido y deja información útil y comprobable.",
+      "validation": {
+        "status": "validada",
+        "keySource": "Material proporcionado (banco-preguntas-kallpa.txt, pregunta 5, marcador [CORRECTA])",
+        "competencyAssignment": "Propuesta de KALLPA; pendiente de revisión experta",
+        "explanationSource": "Redactada por KALLPA a partir de la alternativa correcta del material"
+      }
+    },
+    {
+      "id": "administrativo-06",
+      "occupationId": "administrativo",
+      "competencyKey": "comunicacion",
+      "situation": "Recibes la llamada de un cliente muy agresivo que exige hablar con el gerente general, quien está en una reunión confidencial a puerta cerrada y prohibió interrupciones. ¿Qué haces?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Entras rápido a la reunión, le pasas un papelito al gerente para que él decida si quiere salir a contestar."
+        },
+        {
+          "id": "B",
+          "text": "Le dices al cliente: \"El gerente está ocupado, llame más tarde\" y le cuelgas si te levanta la voz."
+        },
+        {
+          "id": "C",
+          "text": "Le pasas la llamada directamente al número celular personal del gerente para esquivar el problema."
+        },
+        {
+          "id": "D",
+          "text": "Escuchas con firmeza, le explicas que el gerente está en junta de directorio inubicable, registras sus datos y su reclamo detallado, y te comprometes a que lo llamen hoy mismo."
+        },
+        {
+          "id": "E",
+          "text": "Inventas que el gerente salió de viaje de negocios fuera del país para que el cliente se calme y desista de llamar hoy."
+        }
+      ],
+      "correctOptionId": "D",
+      "explanation": "Se respeta la indicación del gerente y se atiende al cliente con firmeza y respeto: se registra su reclamo y se asume un compromiso concreto, sin mentir.",
+      "validation": {
+        "status": "validada",
+        "keySource": "Material proporcionado (banco-preguntas-kallpa.txt, pregunta 6, marcador [CORRECTA])",
+        "competencyAssignment": "Propuesta de KALLPA; pendiente de revisión experta",
+        "explanationSource": "Redactada por KALLPA a partir de la alternativa correcta del material"
+      }
+    },
+    {
+      "id": "administrativo-07",
+      "occupationId": "administrativo",
+      "competencyKey": "organizacion",
+      "situation": "Te asignan organizar el disco duro del área. Actualmente, todos los archivos (contratos, recibos, oficios) están en una carpeta llamada \"Varios\" y sus nombres son como \"doc1.pdf\" o \"escaneo_final.jpg\". ¿Cómo lo estructuras?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Creas carpetas por cada día del año (Ej. \"01 de Marzo\") y mueves ahí los archivos según su fecha de creación en Windows."
+        },
+        {
+          "id": "B",
+          "text": "Creas tres carpetas: \"Archivos Importantes\", \"Archivos Secundarios\" y \"Revisar Después\", moviendo todo a criterio visual."
+        },
+        {
+          "id": "C",
+          "text": "Creas carpetas maestras por categoría (Contratos, Facturas), subcarpetas por año/mes, y renombras los archivos usando una estructura fija (ej. AÑO-MES-DIA_Tipo_Proveedor)."
+        },
+        {
+          "id": "D",
+          "text": "Dejas todos los archivos en \"Varios\", pero les pones etiquetas de colores y creas un acceso directo en el escritorio."
+        },
+        {
+          "id": "E",
+          "text": "Ordenas alfabéticamente los nombres actuales del archivo y los enumeras del 1 al infinito (001_doc.pdf, 002_escaneo.jpg)."
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "Una estructura por categoría y fecha, con nombres de archivo uniformes, permite encontrar cualquier documento y mantener el orden en el tiempo.",
+      "validation": {
+        "status": "validada",
+        "keySource": "Material proporcionado (banco-preguntas-kallpa.txt, pregunta 7, marcador [CORRECTA])",
+        "competencyAssignment": "Propuesta de KALLPA; pendiente de revisión experta",
+        "explanationSource": "Redactada por KALLPA a partir de la alternativa correcta del material"
+      }
+    },
+    {
+      "id": "administrativo-08",
+      "occupationId": "administrativo",
+      "competencyKey": "registro_info",
+      "situation": "En una reunión de la que debes redactar el acta oficial, dos directivos empiezan a discutir acaloradamente, mezclando acusaciones personales con temas del presupuesto. ¿Cómo registras esto?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Transcribes textualmente la discusión, incluyendo los insultos, para protegerte y que quede evidencia legal de lo que pasó."
+        },
+        {
+          "id": "B",
+          "text": "Interrumpes la reunión en voz alta y les dices que dejarás de tomar notas hasta que se comporten como profesionales."
+        },
+        {
+          "id": "C",
+          "text": "Escribes en el acta: \"Los directores tuvieron un altercado personal y la reunión perdió el rumbo por 10 minutos\"."
+        },
+        {
+          "id": "D",
+          "text": "Filtras el ruido: omites los ataques personales y registras únicamente los argumentos técnicos, mociones o acuerdos formales vinculados a la agenda."
+        },
+        {
+          "id": "E",
+          "text": "Sacas tu celular y grabas el audio disimuladamente por si en el futuro alguien te exige comprobar quién empezó la pelea."
+        }
+      ],
+      "correctOptionId": "D",
+      "explanation": "Un acta registra lo que sirve a la organización: argumentos, mociones y acuerdos de la agenda, de forma objetiva y sin ataques personales.",
+      "validation": {
+        "status": "validada",
+        "keySource": "Material proporcionado (banco-preguntas-kallpa.txt, pregunta 8, marcador [CORRECTA])",
+        "competencyAssignment": "Propuesta de KALLPA; pendiente de revisión experta",
+        "explanationSource": "Redactada por KALLPA a partir de la alternativa correcta del material"
+      }
+    },
+    {
+      "id": "reponedor-09",
+      "occupationId": "reponedor",
+      "competencyKey": "org_materiales",
+      "situation": "Tienes que reponer un estante con cajas de leche que acaban de llegar (vencimiento lejano). En la góndola todavía quedan varias cajas de la semana pasada (vencimiento próximo). ¿Cómo procedes?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Colocas la mercadería nueva delante de la antigua para que el estante luzca lleno y atractivo más rápido."
+        },
+        {
+          "id": "B",
+          "text": "Retiras la leche antigua, pones la nueva en la base y colocas la vieja balanceada encima para que el cliente la tome primero."
+        },
+        {
+          "id": "C",
+          "text": "Retiras las cajas antiguas y las envías a la zona de mermas para asegurar que el cliente solo vea productos hiper frescos."
+        },
+        {
+          "id": "D",
+          "text": "Retiras el producto antiguo, limpias el estante, colocas la mercadería nueva al fondo y vuelves a poner la antigua en la primera fila (Sistema FIFO)."
+        },
+        {
+          "id": "E",
+          "text": "Mezclas los productos antiguos y nuevos aleatoriamente, asumiendo que el cliente es responsable de revisar las fechas."
+        }
+      ],
+      "correctOptionId": "D",
+      "explanation": "Con la rotación FIFO (lo primero que entra, sale primero) se vende antes lo que vence antes y se evitan pérdidas; además se aprovecha para limpiar el estante.",
+      "validation": {
+        "status": "validada",
+        "keySource": "Material proporcionado (banco-preguntas-kallpa.txt, pregunta 9, marcador [CORRECTA])",
+        "competencyAssignment": "Propuesta de KALLPA; pendiente de revisión experta",
+        "explanationSource": "Redactada por KALLPA a partir de la alternativa correcta del material"
+      }
+    },
+    {
+      "id": "reponedor-10",
+      "occupationId": "reponedor",
+      "competencyKey": "control_suministros",
+      "situation": "Al hacer el conteo con tu terminal digital (PDA), el sistema indica que hay 50 unidades de un licor caro, pero físicamente en la góndola y trastienda solo cuentas 30. ¿Cuál es el paso a seguir?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Modificas manualmente la cifra del sistema a 30 desde tu PDA para que cuadre el inventario y no te llamen la atención."
+        },
+        {
+          "id": "B",
+          "text": "Anotas \"Faltan 20 licores\" en un post-it, lo pegas en el estante y sigues contando el siguiente pasillo."
+        },
+        {
+          "id": "C",
+          "text": "Asumes inmediatamente que han sido robados y exiges a los agentes de seguridad que cierren las puertas de la tienda."
+        },
+        {
+          "id": "D",
+          "text": "Verificas ubicaciones cruzadas, cruzas el dato con las ventas de la mañana en sistema y reportas el descuadre formalmente al jefe de sección."
+        },
+        {
+          "id": "E",
+          "text": "No haces nada ni reportas, asumiendo que probablemente llegarán en el camión de la tarde y se compensará el saldo."
+        }
+      ],
+      "correctOptionId": "D",
+      "explanation": "Antes de concluir, se verifica en otras ubicaciones y contra las ventas, y el descuadre se reporta formalmente; nunca se ajusta el sistema por cuenta propia.",
+      "validation": {
+        "status": "validada",
+        "keySource": "Material proporcionado (banco-preguntas-kallpa.txt, pregunta 10, marcador [CORRECTA])",
+        "competencyAssignment": "Propuesta de KALLPA; pendiente de revisión experta",
+        "explanationSource": "Redactada por KALLPA a partir de la alternativa correcta del material"
+      }
+    },
+    {
+      "id": "reponedor-11",
+      "occupationId": "reponedor",
+      "competencyKey": "protocolos",
+      "situation": "Un frasco gigante de mermelada se rompe en el pasillo principal justo en hora punta de clientes. ¿Cuál es tu protocolo de acción inmediata?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Corres rápido al cuarto de limpieza por una escoba, dejando los vidrios en el piso porque regresarás en un par de minutos."
+        },
+        {
+          "id": "B",
+          "text": "Pateas disimuladamente los vidrios grandes debajo del estante para despejar el camino y vuelves a tus labores de reposición."
+        },
+        {
+          "id": "C",
+          "text": "Echas abundante agua encima de la mermelada para evitar que se pegue permanentemente al piso de cerámica."
+        },
+        {
+          "id": "D",
+          "text": "Te quedas bloqueando el área (o pides apoyo), consigues señalética de \"Piso Mojado\", recoges vidrios con pala, trapeas y registras la merma."
+        },
+        {
+          "id": "E",
+          "text": "Gritas a los clientes que se alejen y esperas de brazos cruzados a que el personal de limpieza contratado llegue, ya que limpiar no es tu área."
+        }
+      ],
+      "correctOptionId": "D",
+      "explanation": "La prioridad es la seguridad de los clientes: se resguarda el área, se señaliza, se limpia con las herramientas adecuadas y se registra la merma.",
+      "validation": {
+        "status": "validada",
+        "keySource": "Material proporcionado (banco-preguntas-kallpa.txt, pregunta 11, marcador [CORRECTA])",
+        "competencyAssignment": "Propuesta de KALLPA; pendiente de revisión experta",
+        "explanationSource": "Redactada por KALLPA a partir de la alternativa correcta del material"
+      }
+    },
+    {
+      "id": "reponedor-12",
+      "occupationId": "reponedor",
+      "competencyKey": "protocolos",
+      "situation": "Llegas a tu turno y encuentras que el reponedor de la mañana dejó un pallet de mercadería pesada bloqueando totalmente la salida de emergencia del almacén. ¿Qué haces?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Le tomas una foto, la envías quejándote al grupo de WhatsApp del área y te vas a trabajar dejando el pallet ahí como prueba."
+        },
+        {
+          "id": "B",
+          "text": "Lo ignoras. Como tú no trajiste esa mercadería, el protocolo dicta que no debes tocar los productos asignados a otro compañero."
+        },
+        {
+          "id": "C",
+          "text": "Desarmas el pallet caja por caja con las manos y la llevas a tus pasillos, aunque retrase todo tu trabajo planificado del día."
+        },
+        {
+          "id": "D",
+          "text": "Pegas un cartel grande de papel sobre el pallet que diga: \"Peligro: Salida bloqueada temporalmente, usar otra puerta\"."
+        },
+        {
+          "id": "E",
+          "text": "Mueves inmediatamente el pallet con la estoca (transpaleta) hacia un área segura permitida y luego reportas el incidente de seguridad al supervisor."
+        }
+      ],
+      "correctOptionId": "E",
+      "explanation": "Una salida de emergencia bloqueada es un riesgo inmediato: se despeja con el equipo adecuado y se reporta el incidente para que no se repita.",
+      "validation": {
+        "status": "validada",
+        "keySource": "Material proporcionado (banco-preguntas-kallpa.txt, pregunta 12, marcador [CORRECTA])",
+        "competencyAssignment": "Propuesta de KALLPA; pendiente de revisión experta",
+        "explanationSource": "Redactada por KALLPA a partir de la alternativa correcta del material"
+      }
+    },
+    {
+      "id": "vendedor-13",
+      "occupationId": "vendedor",
+      "competencyKey": "comunicacion",
+      "situation": "Un cliente busca un producto que no está en vitrina. Tu sistema en la tablet indica que quedan 2 unidades en el almacén. Le pides que espere, pero al entrar al almacén descubres que el sistema estaba equivocado (inventario en cero). ¿Qué haces al salir?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Le dices que otro cliente seguro se lo acaba de robar o esconder, justificando así la falla del sistema."
+        },
+        {
+          "id": "B",
+          "text": "Te quedas en el almacén 15 minutos ordenando cajas, esperando a que el cliente se aburra de esperar y se vaya solo."
+        },
+        {
+          "id": "C",
+          "text": "Sales, le dices secamente: \"El sistema no sirve, no hay\" y te das la vuelta para seguir acomodando tu sección."
+        },
+        {
+          "id": "D",
+          "text": "Le pides disculpas por el error de stock, le ofreces un producto alternativo de características similares, o le ofreces tomar sus datos para avisarle al llegar."
+        },
+        {
+          "id": "E",
+          "text": "Vas a la vitrina, sacas el modelo de exhibición que está rayado y sin caja, y se lo vendes al mismo precio para no perder tu comisión."
+        }
+      ],
+      "correctOptionId": "D",
+      "explanation": "Reconocer el error con una disculpa y ofrecer alternativas concretas mantiene la confianza del cliente aunque el producto no esté disponible.",
+      "validation": {
+        "status": "validada",
+        "keySource": "Material proporcionado (banco-preguntas-kallpa.txt, pregunta 13, marcador [CORRECTA])",
+        "competencyAssignment": "Propuesta de KALLPA; pendiente de revisión experta",
+        "explanationSource": "Redactada por KALLPA a partir de la alternativa correcta del material"
+      }
+    },
+    {
+      "id": "vendedor-14",
+      "occupationId": "vendedor",
+      "competencyKey": "uso_productos",
+      "situation": "Un cliente te hace preguntas muy técnicas sobre un electrodoméstico que llegó esa misma mañana, del cual no has recibido capacitación y no sabes cómo funciona. ¿Cómo reaccionas?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Inventas características basándote en un modelo antiguo similar con mucha seguridad para que el cliente no dude de tu profesionalismo."
+        },
+        {
+          "id": "B",
+          "text": "Le dices \"Señor, recién lo trajeron hoy, no tengo idea\", te quedas en silencio y esperas a que te haga otra pregunta más fácil."
+        },
+        {
+          "id": "C",
+          "text": "Le indicas honestamente que es la última novedad, sacas tu tablet/celular corporativo y buscas la ficha técnica en el sistema para revisarla junto al cliente."
+        },
+        {
+          "id": "D",
+          "text": "Le dices en voz baja que ese producto de novedad ha salido malo y lo convences de llevarse el que tú sí sabes cómo manejar."
+        },
+        {
+          "id": "E",
+          "text": "Le dices \"Espéreme\", te vas al almacén a leer el manual completo por 20 minutos, dejando al cliente solo en el pasillo."
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "Ser honesto y consultar la ficha técnica oficial junto al cliente da información correcta sobre el producto, en lugar de inventar o abandonar la consulta.",
+      "validation": {
+        "status": "validada",
+        "keySource": "Material proporcionado (banco-preguntas-kallpa.txt, pregunta 14, marcador [CORRECTA])",
+        "competencyAssignment": "Propuesta de KALLPA; pendiente de revisión experta",
+        "explanationSource": "Redactada por KALLPA a partir de la alternativa correcta del material"
+      }
+    },
+    {
+      "id": "vendedor-15",
+      "occupationId": "vendedor",
+      "competencyKey": "comunicacion",
+      "situation": "Estás atendiendo a un cliente muy indeciso que lleva 30 minutos preguntando detalles. En ese momento, entra un cliente \"VIP\" que siempre hace compras grandes y te hace una seña pidiendo tu atención exclusiva. ¿Cómo manejas esto?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Dejas hablando solo al cliente indeciso y corres a atender al cliente VIP porque representa una venta mucho más grande para tu cuota."
+        },
+        {
+          "id": "B",
+          "text": "Ignoras por completo al cliente VIP, sin mirarlo, hasta que el cliente indeciso decida si va a comprar o no."
+        },
+        {
+          "id": "C",
+          "text": "Le dices al indeciso: \"Señor, por favor apúrese en decidir que me está esperando un cliente muy importante en la puerta\"."
+        },
+        {
+          "id": "D",
+          "text": "Intentas atender a los dos a la vez, gritándole las características de los productos al VIP desde el otro lado del pasillo."
+        },
+        {
+          "id": "E",
+          "text": "Haces contacto visual con el VIP indicándole amablemente que en un momento vas, dejas al indeciso analizando un dato concreto, y gestionas apoyo de otro vendedor si es posible."
+        }
+      ],
+      "correctOptionId": "E",
+      "explanation": "Se reconoce al otro cliente con amabilidad sin abandonar al primero, y se busca apoyo para que ambos reciban buena atención.",
+      "validation": {
+        "status": "validada",
+        "keySource": "Material proporcionado (banco-preguntas-kallpa.txt, pregunta 15, marcador [CORRECTA])",
+        "competencyAssignment": "Propuesta de KALLPA; pendiente de revisión experta",
+        "explanationSource": "Redactada por KALLPA a partir de la alternativa correcta del material"
+      }
+    },
+    {
+      "id": "vendedor-16",
+      "occupationId": "vendedor",
+      "competencyKey": "protocolos",
+      "situation": "Al hacer tu revisión visual de apertura, notas que faltan dos audífonos de altísima gama en tu vitrina cerrada con llave, y el sistema no registra ventas de ayer. ¿Cuál es tu reacción protocolar?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Descuentas el stock desde el sistema digital pasándolo a \"merma\" para que en la auditoría mensual no detecten el descuadre."
+        },
+        {
+          "id": "B",
+          "text": "Te pasas toda la mañana buscando en la basura y otros departamentos, descuidando por completo a los clientes de tu área."
+        },
+        {
+          "id": "C",
+          "text": "No tocas nada de la vitrina y reportas inmediatamente el hecho a Prevención de Pérdidas (seguridad) y al Gerente para revisión de cámaras."
+        },
+        {
+          "id": "D",
+          "text": "Esperas en silencio hasta el viernes a ver si por milagro aparecen, para evitar que te llamen la atención a ti."
+        },
+        {
+          "id": "E",
+          "text": "Llamas directamente desde tu celular a la policía para denunciar un robo, sin notificar al gerente de la tienda."
+        }
+      ],
+      "correctOptionId": "C",
+      "explanation": "Ante una posible pérdida, no se manipula la vitrina y se reporta de inmediato a los responsables para revisar las cámaras.",
+      "validation": {
+        "status": "validada",
+        "keySource": "Material proporcionado (banco-preguntas-kallpa.txt, pregunta 16, marcador [CORRECTA])",
+        "competencyAssignment": "Propuesta de KALLPA; pendiente de revisión experta",
+        "explanationSource": "Redactada por KALLPA a partir de la alternativa correcta del material"
+      }
+    },
+    {
+      "id": "cajero-17",
+      "occupationId": "cajero",
+      "competencyKey": "herramientas_digitales",
+      "situation": "Un cliente pasa su tarjeta por el POS (terminal). El equipo emite un pitido de cobro exitoso, pero la pantalla de tu caja se congela en negro y no imprime el comprobante (boleta). El cliente está asustado. ¿Qué haces?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Le pides que vuelva a pasar la tarjeta \"por si acaso\", asegurándole que si le cobran doble el banco se lo devolverá el próximo mes."
+        },
+        {
+          "id": "B",
+          "text": "Apagas la caja desenchufándola bruscamente, le entregas sus bolsas al cliente y le dices que se vaya rápido antes de que venga tu jefe."
+        },
+        {
+          "id": "C",
+          "text": "Entras en pánico, gritas \"¡Se colgó el sistema!\" y mandas al cliente a que haga la fila de 20 personas en la caja de al lado."
+        },
+        {
+          "id": "D",
+          "text": "Mantienes la calma, le pides al cliente que revise el cargo en su App bancaria, validas en el portal del POS y llamas al supervisor para reiniciar el sistema y extraer la boleta recuperada."
+        },
+        {
+          "id": "E",
+          "text": "Escribes a mano en un papel en blanco: \"Vale por una compra de 100 soles pagado con tarjeta\", lo firmas y dejas ir al cliente."
+        }
+      ],
+      "correctOptionId": "D",
+      "explanation": "Antes de cobrar de nuevo, se verifica si el pago se realizó (app bancaria y portal del POS) y se sigue el procedimiento con el supervisor para recuperar el comprobante.",
+      "validation": {
+        "status": "validada",
+        "keySource": "Material proporcionado (banco-preguntas-kallpa.txt, pregunta 17, marcador [CORRECTA])",
+        "competencyAssignment": "Propuesta de KALLPA; pendiente de revisión experta",
+        "explanationSource": "Redactada por KALLPA a partir de la alternativa correcta del material"
+      }
+    },
+    {
+      "id": "cajero-18",
+      "occupationId": "cajero",
+      "competencyKey": "protocolos",
+      "situation": "Un cliente te entrega un billete de 100 y, al revisarlo bajo la luz UV y palparlo, tienes la absoluta certeza de que es falso. ¿Cómo manejas la situación bajo protocolo?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Rompes el billete por la mitad frente al cliente, le dices que es un estafador y llamas al guardia de seguridad a gritos."
+        },
+        {
+          "id": "B",
+          "text": "Como la compra era de solo 10 soles, decides pasarlo rápidamente y dar el vuelto para no generar una escena problemática."
+        },
+        {
+          "id": "C",
+          "text": "Dices en voz muy alta: \"¡Atención a todas las cajas, están pasando billetes falsos!\" humillando al cliente frente a la fila."
+        },
+        {
+          "id": "D",
+          "text": "Le devuelves el billete disimuladamente y le mientes diciendo: \"Señor, mi sistema de caja se acaba de colgar, vaya a pagar al frente\"."
+        },
+        {
+          "id": "E",
+          "text": "Retienes el billete a la vista, activas tu señal de apoyo para el supervisor, y le dices al cliente: \"Señor, este billete no pasa nuestros filtros de validación, ¿tendrá otro medio de pago?\"."
+        }
+      ],
+      "correctOptionId": "E",
+      "explanation": "Se retiene el billete y se pide apoyo con discreción, tratando al cliente con respeto y ofreciéndole otro medio de pago.",
+      "validation": {
+        "status": "validada",
+        "keySource": "Material proporcionado (banco-preguntas-kallpa.txt, pregunta 18, marcador [CORRECTA])",
+        "competencyAssignment": "Propuesta de KALLPA; pendiente de revisión experta",
+        "explanationSource": "Redactada por KALLPA a partir de la alternativa correcta del material"
+      }
+    },
+    {
+      "id": "cajero-19",
+      "occupationId": "cajero",
+      "competencyKey": "registro_info",
+      "situation": "Al terminar tu turno y hacer tu arqueo/cuadre de caja, descubres que hay un faltante de 50 soles en efectivo en comparación con lo que dice tu sistema informático. ¿Qué corresponde hacer?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sacas 50 soles de tu propia billetera y los pones en la caja para que el reporte cuadre perfecto y nadie te investigue."
+        },
+        {
+          "id": "B",
+          "text": "Entras al sistema informático y borras una venta en efectivo de 50 soles para forzar que los números coincidan con tu dinero físico."
+        },
+        {
+          "id": "C",
+          "text": "Dejas tu gaveta abierta sobre el mostrador y le dejas una nota al compañero del turno noche diciendo \"Por favor búscame 50 soles\"."
+        },
+        {
+          "id": "D",
+          "text": "Recuentas el efectivo, verificas cobros manuales o con tarjeta mal tipificados, y si el faltante persiste, firmas el reporte de descuadre y lo informas a tesorería/supervisor."
+        },
+        {
+          "id": "E",
+          "text": "Te justificas rápidamente con el jefe diciéndole sin pruebas que el cajero anterior seguro te entregó la caja con menos dinero."
+        }
+      ],
+      "correctOptionId": "D",
+      "explanation": "Se busca el origen del faltante (recuento y cobros mal registrados) y, si persiste, se documenta y se reporta; nunca se borran ventas ni se cubre con dinero propio.",
+      "validation": {
+        "status": "validada",
+        "keySource": "Material proporcionado (banco-preguntas-kallpa.txt, pregunta 19, marcador [CORRECTA])",
+        "competencyAssignment": "Propuesta de KALLPA; pendiente de revisión experta",
+        "explanationSource": "Redactada por KALLPA a partir de la alternativa correcta del material"
+      }
+    },
+    {
+      "id": "cajero-20",
+      "occupationId": "cajero",
+      "competencyKey": "comunicacion",
+      "situation": "Tienes una fila de 5 personas. De pronto tu impresora se queda sin rollo de papel para boletas y, al mismo tiempo, el cliente actual te exige una \"Factura electrónica\" pero no sabe dictar bien su RUC. ¿Cómo organizas esto?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Gritas hacia la fila: \"¡Sistema caído, todos vayan a otras cajas!\", mintiendo para ganar tiempo de cambiar el rollo."
+        },
+        {
+          "id": "B",
+          "text": "Tratas de memorizar los 11 dígitos del RUC que el cliente te gritó, mientras corres al almacén al otro lado de la tienda a buscar papel."
+        },
+        {
+          "id": "C",
+          "text": "Le emites una boleta electrónica normal en contra de su voluntad, le dices \"Ya no se puede hacer factura\" y pones un rollo nuevo."
+        },
+        {
+          "id": "D",
+          "text": "Detienes la atención completamente, caminas lento por el papel, y a tu regreso le pides al cliente que vuelva a gritar sus datos."
+        },
+        {
+          "id": "E",
+          "text": "Le brindas un bloc/pantalla al cliente para que anote con calma su RUC y razón social, mientras tú cambias velozmente el rollo de papel bajo tu módulo, disculpándote por los segundos de demora."
+        }
+      ],
+      "correctOptionId": "E",
+      "explanation": "Pedir al cliente que escriba su RUC evita errores al dictarlo y, mientras tanto, se resuelve lo del papel con una disculpa breve.",
+      "validation": {
+        "status": "validada",
+        "keySource": "Material proporcionado (banco-preguntas-kallpa.txt, pregunta 20, marcador [CORRECTA])",
+        "competencyAssignment": "Propuesta de KALLPA; pendiente de revisión experta",
+        "explanationSource": "Redactada por KALLPA a partir de la alternativa correcta del material"
+      }
+    }
+  ]
+}

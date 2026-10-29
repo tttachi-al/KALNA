@@ -1,0 +1,50 @@
+{
+  "name": "kallpa-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "KALLPA â€” frontend de diagnÃ³stico y desarrollo de competencias laborales para cinco ocupaciones (datos de demostraciÃ³n).",
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "test": "node --test tests/cv.test.js tests/assessment.test.js tests/accounts.test.js tests/decisions-eval.test.js tests/interview-actions-eval.test.js tests/engine.test.js tests/interview.test.js tests/persistence.test.js tests/competencies.test.js tests/embeddings.test.js tests/synthetic-catalog.test.js tests/matching.test.js tests/route.test.js tests/passport.test.js tests/demo-passport.test.js",
+    "test:qvac": "node --test --test-timeout=1800000 tests/qvac.live.test.js",
+    "server": "node --env-file-if-exists=.env server/index.js",
+    "db:migrate": "node --env-file-if-exists=.env server/db/migrate.js",
+    "test:db": "node --env-file-if-exists=.env --test tests/db.test.js",
+    "matching:calibrate": "node --env-file-if-exists=.env server/matching/calibrate.js",
+    "embeddings:index": "node --env-file-if-exists=.env server/embeddings/cli.js",
+    "catalog:synthetic": "node --env-file-if-exists=.env server/catalog/load.js",
+    "test:embeddings": "node --env-file-if-exists=.env --test --test-timeout=900000 tests/embeddings.live.test.js",
+    "assessment:import": "node server/assessment/import.js",
+    "test:accounts": "node --env-file-if-exists=.env --test tests/accounts.db.test.js"
+  },
+  "dependencies": {
+    "@fontsource-variable/source-sans-3": "^5.3.1",
+    "@fontsource/lexend": "^5.2.9",
+    "@qvac/sdk": "^0.22.0",
+    "docx": "^9.15.0",
+    "lucide-react": "^0.546.0",
+    "pdfkit": "^0.17.2",
+    "pg": "^8.23.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router-dom": "^7.9.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.37.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "eslint": "^9.37.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.23",
+    "fflate": "^0.8.3",
+    "globals": "^16.4.0",
+    "pdfjs-dist": "^6.4.299",
+    "vite": "^7.1.10"
+  }
+}

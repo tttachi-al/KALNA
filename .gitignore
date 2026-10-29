@@ -1,0 +1,11 @@
+*.log
+node_modules
+dist
+*.local
+.env
+.env.*
+!.env.example
+.DS_Store
+npm-debug.log*
+tmp/
+backend-test.*.log

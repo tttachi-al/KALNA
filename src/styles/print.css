@@ -1,0 +1,61 @@
+/* KALLPA · Impresión (Pasaporte) */
+@media print {
+  @page {
+    margin: 14mm;
+  }
+  :root {
+    --bg: #fff;
+    --surface: #fff;
+    --surface-2: #fff;
+    --ink: #000;
+    --ink-2: #222;
+    --muted: #444;
+    --line: #bbb;
+    --line-strong: #888;
+  }
+  body {
+    background: #fff !important;
+    color: #000;
+  }
+  .appbar,
+  .bottomnav,
+  .a11y,
+  .demobar,
+  .footer,
+  .toast-region,
+  .skip-link,
+  .no-print {
+    display: none !important;
+  }
+  .shell {
+    display: block !important;
+  }
+  .main {
+    padding: 0 !important;
+    max-width: none !important;
+  }
+  .passport {
+    box-shadow: none !important;
+    border: 1px solid #999 !important;
+    max-width: none;
+  }
+  .passport-band {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .badge {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    border: 1px solid #999;
+  }
+  .passport-skills li,
+  .passport-fitcol,
+  .passport-stat {
+    break-inside: avoid;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  * {
+    animation: none !important;
+  }
+}

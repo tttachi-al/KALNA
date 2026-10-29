@@ -1,0 +1,198 @@
+/* KALLPA · Perfil de competencias */
+
+.profile-exp {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-3) var(--s-5);
+  padding: var(--s-4) var(--s-5);
+}
+.profile-dl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2) var(--s-5);
+  margin: 0;
+}
+.profile-dl div {
+  display: flex;
+  gap: var(--s-2);
+  font-size: var(--text-sm);
+}
+.profile-dl dt {
+  color: var(--muted);
+}
+.profile-dl dt::after {
+  content: ':';
+}
+.profile-dl dd {
+  margin: 0;
+  font-weight: var(--fw-semibold);
+}
+.profile-exp .badge-fiction {
+  margin-left: auto;
+}
+
+/* Pestañas por estado: resumen y filtro a la vez */
+.status-tabs {
+  display: grid;
+  gap: var(--s-3);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.status-tab {
+  display: grid;
+  align-content: start;
+  gap: var(--s-2);
+  padding: var(--s-4);
+  border-radius: var(--r-md);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--tone);
+  background: var(--surface);
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    box-shadow var(--dur-fast) var(--ease-out),
+    background-color var(--dur-fast) var(--ease-out);
+}
+.status-tab:hover {
+  box-shadow: var(--shadow-2);
+}
+.status-tab[aria-selected='true'] {
+  background: color-mix(in srgb, var(--tone) 8%, var(--surface));
+  border-color: var(--tone);
+  box-shadow: var(--shadow-2);
+}
+.status-tab-head {
+  display: flex;
+  align-items: center;
+  gap: var(--s-3);
+}
+.status-tab-evidencia {
+  --tone: var(--ok);
+}
+.status-tab-declarada {
+  --tone: var(--declared);
+}
+.status-tab-por_validar {
+  --tone: var(--pending);
+}
+
+.skill-grid {
+  display: grid;
+  gap: var(--s-3);
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+  align-items: start;
+}
+.skill-card {
+  display: grid;
+  align-content: start;
+  gap: var(--s-3);
+  padding: var(--s-4) var(--s-5);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow-1);
+  animation: rise-in var(--dur-slow) var(--ease-out) both;
+}
+.skill-card.is-evidence {
+  border-color: color-mix(in srgb, var(--ok) 40%, var(--line));
+}
+.skill-head {
+  margin: 0;
+  font-size: var(--text-md);
+}
+.skill-toggle {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-2);
+  width: 100%;
+  min-height: var(--target);
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.skill-name {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.skill-toggle:hover .skill-name {
+  color: var(--brand);
+}
+.skill-chevron {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  color: var(--muted);
+  transition: transform var(--dur) var(--ease-out);
+}
+.skill-toggle[aria-expanded='true'] .skill-chevron {
+  transform: rotate(180deg);
+}
+.skill-body {
+  display: grid;
+  gap: var(--s-3);
+}
+.skill-body[hidden] {
+  display: none;
+}
+.skill-occs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.skill-quotes {
+  display: grid;
+  gap: var(--s-2);
+}
+.skill-quotes blockquote {
+  margin: 0;
+}
+.skill-actions {
+  gap: var(--s-2);
+}
+.skill-form {
+  display: grid;
+  gap: var(--s-2);
+  padding: var(--s-4);
+  border-radius: var(--r-md);
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+}
+
+.next-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-4);
+  background:
+    radial-gradient(80% 120% at 100% 0%, var(--brand-soft), transparent 70%),
+    var(--surface);
+}
+.next-card h2 {
+  margin-bottom: 4px;
+}
+
+/* Acción general de evaluación, al final de las tarjetas con evidencia */
+.assess-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-3) var(--s-5);
+  margin-top: var(--s-4);
+  border-left: 4px solid var(--peru);
+}
+.assess-cta .card-title {
+  margin: 0 0 var(--s-1);
+}
+.assess-cta p {
+  margin: 0;
+}

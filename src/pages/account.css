@@ -1,0 +1,40 @@
+/* KALLPA · Cuenta: inicio de sesión, registro y gestión */
+
+.account-form {
+  max-width: 480px;
+}
+.account-dl {
+  display: grid;
+  gap: var(--s-2);
+  margin: 0;
+}
+.account-dl div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s-2);
+}
+.account-dl dt {
+  color: var(--muted);
+  min-width: 150px;
+}
+.account-dl dd {
+  margin: 0;
+  font-weight: var(--fw-semibold);
+  overflow-wrap: anywhere;
+}
+.account-danger {
+  border-left: 4px solid var(--danger);
+}
+.account-delete-btn {
+  color: var(--danger);
+  border-color: var(--danger);
+}
+.account-delete ul {
+  margin: 0;
+  padding-left: 1.2em;
+  display: grid;
+  gap: var(--s-1);
+}
+.account-delete p {
+  margin: 0;
+}

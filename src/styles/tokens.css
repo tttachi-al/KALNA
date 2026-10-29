@@ -1,0 +1,259 @@
+/*
+ * KALLPA · Tokens de diseño
+ * Estilo: Accessible & Ethical (contraste ≥ 4.5:1, foco visible, objetivos ≥ 44px).
+ * Tipografía: Lexend (títulos y botones) + Source Sans 3 (texto, formularios y etiquetas).
+ * Paleta institucional (inspirada en gob.pe): rojo Perú como identidad y estado activo (hover),
+ * grises neutros para la interfaz, gris oscuro para botones y superficies destacadas, celeste de acento.
+ */
+
+:root {
+  color-scheme: light;
+
+  /* Superficies */
+  --bg: #f5f6f8;
+  --bg-elevated: #f9fafb;
+  --surface: #ffffff;
+  --surface-2: #f6f7f9;
+  --surface-sunken: #eceef2;
+
+  /* Texto */
+  --ink: #1f2328;
+  --ink-2: #3d434a;
+  --muted: #5c636b;
+  --on-brand: #ffffff;
+
+  /* Líneas */
+  --line: #dee2e8;
+  --line-strong: #89919b;
+
+  /* Acción: gris oscuro que pasa a rojo Perú al interactuar */
+  --brand: #2b3036;
+  --brand-hover: #d91023;
+  --brand-soft: #e5f1f4;
+  --brand-soft-ink: #1d3c46;
+
+  /* Gris oscuro (portada, pasaporte, barra demo); acento celeste */
+  --night: #262a2f;
+  --night-2: #30353b;
+  --night-line: #454b52;
+  --night-ink: #ffffff;
+  --night-muted: #c9ced4;
+  --gold: #a7d0d6;
+
+  /* Rojo Perú — identidad: logo, títulos pequeños, paso activo, hover, chat */
+  --peru: #d91023;
+  --peru-hover: #b00d1c;
+  --peru-soft: #fdecee;
+  --peru-soft-ink: #a50f1e;
+  --on-peru: #ffffff;
+  --peru-ink: #c20e21; /* rojo para texto */
+
+  /* Celeste institucional */
+  --sky: #a7d0d6;
+
+  /* Competencias transferibles (ámbar legible sobre claro y sobre carbón) */
+  --transfer: #e0a82e;
+
+
+  /* Estados de competencia */
+  --ok: #0b6b63;
+  --ok-soft: #daf1ec;
+  --declared: #364152;
+  --declared-soft: #e8ebf0;
+  --pending: #7a4a00;
+  --pending-soft: #fcefd0;
+  --danger: #b42318;
+  --danger-soft: #fde8e6;
+
+  /* Ocupaciones (texto/íconos sobre claro) */
+  --occ-limpieza: #0e7490;
+  --occ-administrativo: #3b5ba9;
+  --occ-reponedor: #9a5b0b;
+  --occ-vendedor: #a8326e;
+  --occ-cajero: #11703a;
+  --occ-limpieza-soft: #dff1f5;
+  --occ-administrativo-soft: #e5ebf8;
+  --occ-reponedor-soft: #f8ecd9;
+  --occ-vendedor-soft: #f7e3ee;
+  --occ-cajero-soft: #e0f2e6;
+
+  /* Ocupaciones sobre fondo oscuro */
+  --map-limpieza: #5cc8dc;
+  --map-administrativo: #93aaec;
+  --map-reponedor: #e6ae52;
+  --map-vendedor: #ee86b6;
+  --map-cajero: #62cf86;
+
+  /* Foco */
+  --focus: #0056ac;
+
+  /* Tipografía */
+  --font-display: 'Lexend', 'Source Sans 3 Variable', system-ui, sans-serif;
+  --font-body: 'Source Sans 3 Variable', 'Source Sans 3', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* Escala (≈1.2): 12 · 13.5 · 15 · 17 · 20 · 24 · 32 · 34–54 */
+  --text-2xs: 0.75rem; /* 12px — solo rótulos de la barra inferior */
+  --text-xs: 0.84375rem; /* 13.5px — etiquetas, insignias */
+  --text-sm: 0.9375rem; /* 15px — texto auxiliar */
+  --text-md: 1.0625rem; /* 17px — texto base */
+  --text-lg: 1.25rem; /* 20px — h3, títulos de tarjeta */
+  --text-xl: 1.5rem; /* 24px — h2 */
+  --text-2xl: 2rem; /* 32px — h1 */
+  --text-3xl: clamp(2.1rem, 1.4rem + 2.6vw, 3.4rem); /* portada */
+
+  /* Pesos */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Interlineado */
+  --lh-tight: 1.15; /* títulos */
+  --lh-snug: 1.3; /* subtítulos, etiquetas, botones */
+  --lh-body: 1.6; /* párrafos */
+
+  /* Espaciado entre letras */
+  --tracking-tight: -0.02em; /* títulos */
+  --tracking-caps: 0.06em; /* textos en mayúsculas */
+  --tracking-wide: 0.12em; /* marca */
+
+  /* Espaciado (ritmo de 4/8) */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+
+  /* Radios */
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 18px;
+  --r-xl: 26px;
+  --r-pill: 999px;
+
+  /* Sombras */
+  --shadow-1: 0 1px 2px rgb(32 35 39 / 0.06), 0 1px 1px rgb(32 35 39 / 0.04);
+  --shadow-2: 0 6px 18px -6px rgb(32 35 39 / 0.14), 0 2px 4px rgb(32 35 39 / 0.05);
+  --shadow-3: 0 18px 40px -12px rgb(32 35 39 / 0.25);
+
+  /* Movimiento */
+  --dur-fast: 140ms;
+  --dur: 220ms;
+  --dur-slow: 380ms;
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-spring: cubic-bezier(0.34, 1.4, 0.64, 1);
+
+  /* Layout */
+  --content-max: 1120px;
+  --content-wide: 1680px; /* secciones de "Tu recorrido" */
+  --gutter-wide: clamp(24px, 3.5vw, 64px);
+  --topbar-h: 60px;
+  --bottomnav-h: 68px;
+  --target: 44px;
+}
+
+/* ───────────── Tema oscuro ───────────── */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --bg: #121417;
+    --bg-elevated: #16191c;
+    --surface: #1b1e22;
+    --surface-2: #22262b;
+    --surface-sunken: #0d0f11;
+    --ink: #f2f3f5;
+    --ink-2: #ccd0d5;
+    --muted: #a0a7af;
+    --on-brand: #16181b;
+    --line: #2f343a;
+    --line-strong: #6e757d;
+    --brand: #e4e7eb;
+    --brand-hover: #d91023;
+    --brand-soft: #1c2c31;
+    --brand-soft-ink: #cfe6eb;
+    --peru: #d91023;
+    --peru-hover: #ef3c47;
+    --peru-soft: #3a1418;
+    --peru-soft-ink: #ffb0b5;
+    --on-peru: #ffffff;
+    --peru-ink: #ff7a82;
+    --night: #1f2327;
+    --night-2: #292e33;
+    --night-line: #3d434a;
+    --ok: #6fdccd;
+    --ok-soft: #10332f;
+    --declared: #c9d1de;
+    --declared-soft: #263450;
+    --pending: #f3c66b;
+    --pending-soft: #3a2d10;
+    --danger: #ff9b8f;
+    --danger-soft: #3d1a17;
+    --occ-limpieza: #5cc8dc;
+    --occ-administrativo: #93aaec;
+    --occ-reponedor: #e6ae52;
+    --occ-vendedor: #ee86b6;
+    --occ-cajero: #62cf86;
+    --occ-limpieza-soft: #12313a;
+    --occ-administrativo-soft: #1d2a4d;
+    --occ-reponedor-soft: #3a2a12;
+    --occ-vendedor-soft: #3a1a2c;
+    --occ-cajero-soft: #133322;
+    --focus: #a7d0d6;
+    --shadow-1: 0 1px 2px rgb(0 0 0 / 0.35);
+    --shadow-2: 0 8px 22px -8px rgb(0 0 0 / 0.55);
+    --shadow-3: 0 18px 44px -12px rgb(0 0 0 / 0.65);
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #121417;
+  --bg-elevated: #16191c;
+  --surface: #1b1e22;
+  --surface-2: #22262b;
+  --surface-sunken: #0d0f11;
+  --ink: #f2f3f5;
+  --ink-2: #ccd0d5;
+  --muted: #a0a7af;
+  --on-brand: #16181b;
+  --line: #2f343a;
+  --line-strong: #6e757d;
+  --brand: #e4e7eb;
+  --brand-hover: #d91023;
+  --brand-soft: #1c2c31;
+  --brand-soft-ink: #cfe6eb;
+  --peru: #d91023;
+  --peru-hover: #ef3c47;
+  --peru-soft: #3a1418;
+  --peru-soft-ink: #ffb0b5;
+  --on-peru: #ffffff;
+  --peru-ink: #ff7a82;
+  --night: #1f2327;
+  --night-2: #292e33;
+  --night-line: #3d434a;
+  --ok: #6fdccd;
+  --ok-soft: #10332f;
+  --declared: #c9d1de;
+  --declared-soft: #263450;
+  --pending: #f3c66b;
+  --pending-soft: #3a2d10;
+  --danger: #ff9b8f;
+  --danger-soft: #3d1a17;
+  --occ-limpieza: #5cc8dc;
+  --occ-administrativo: #93aaec;
+  --occ-reponedor: #e6ae52;
+  --occ-vendedor: #ee86b6;
+  --occ-cajero: #62cf86;
+  --occ-limpieza-soft: #12313a;
+  --occ-administrativo-soft: #1d2a4d;
+  --occ-reponedor-soft: #3a2a12;
+  --occ-vendedor-soft: #3a1a2c;
+  --occ-cajero-soft: #133322;
+  --focus: #a7d0d6;
+  --shadow-1: 0 1px 2px rgb(0 0 0 / 0.35);
+  --shadow-2: 0 8px 22px -8px rgb(0 0 0 / 0.55);
+  --shadow-3: 0 18px 44px -12px rgb(0 0 0 / 0.65);
+}

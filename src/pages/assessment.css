@@ -1,0 +1,144 @@
+/* KALLPA · Evaluación de competencias */
+
+.assess-rules {
+  margin: 0;
+  padding-left: 1.2em;
+  display: grid;
+  gap: var(--s-2);
+}
+.assess-pick {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--s-2);
+}
+.assess-check {
+  display: flex;
+  align-items: center;
+  gap: var(--s-2);
+  min-height: var(--target);
+  cursor: pointer;
+}
+.assess-check input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--peru);
+  flex: none;
+}
+
+.assess-q-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s-2);
+}
+.assess-q-head .eyebrow,
+.assess-q-head .card-title {
+  margin: 0;
+}
+.assess-q-head .eyebrow:focus {
+  outline: none;
+}
+
+.assess-options {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--s-2);
+}
+.assess-situation {
+  padding: 0;
+  margin-bottom: var(--s-4);
+  font-size: var(--text-md);
+  font-weight: var(--fw-semibold);
+  line-height: 1.5;
+}
+.assess-option {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s-3);
+  padding: var(--s-3) var(--s-4);
+  border: 1.5px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--surface);
+  cursor: pointer;
+  line-height: 1.45;
+  transition: border-color var(--dur-fast) var(--ease-out), background-color var(--dur-fast) var(--ease-out);
+}
+.assess-option:hover {
+  border-color: var(--line-strong);
+}
+.assess-option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.assess-option:has(input:focus-visible) {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+.assess-option.is-selected {
+  border-color: var(--peru);
+  background: var(--peru-soft);
+}
+.assess-letter {
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--r-pill);
+  border: 1.5px solid var(--line-strong);
+  font-weight: var(--fw-semibold);
+  font-size: var(--text-sm);
+}
+.assess-option.is-selected .assess-letter {
+  background: var(--peru);
+  border-color: var(--peru);
+  color: var(--on-peru);
+}
+.assess-nav {
+  justify-content: space-between;
+}
+
+.assess-review,
+.assess-feedback {
+  margin: 0;
+  padding-left: 1.2em;
+  display: grid;
+  gap: var(--s-4);
+}
+.assess-review p,
+.assess-feedback p {
+  margin: 0 0 var(--s-1);
+}
+.assess-review-situation {
+  line-height: 1.45;
+}
+
+.assess-result.is-approved {
+  border-left: 4px solid var(--ok);
+}
+.assess-ok {
+  color: var(--ok);
+}
+.assess-miss {
+  color: var(--peru-soft-ink);
+}
+.assess-cert {
+  display: grid;
+  gap: var(--s-2);
+  justify-items: start;
+}
+
+@media (max-width: 560px) {
+  .assess-nav .btn {
+    flex: 1 1 auto;
+  }
+}
+.assess-source {
+  margin: 0;
+}
